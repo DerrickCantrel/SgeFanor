@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Criar Atividade</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body style="background-color: #f8f8ff">
+        <h:form>
+            <b:container>
+                <b:panel look="none" medium-screen="8" offset="2" style="background-color: rgba(0, 0, 0, 0.1);">
+                <b:row>
+                    <b:column medium-screen="12">
+                    </b:column>
+                </b:row>
+                      <b:row>
+                          <b:column medium-screen="8">
+                    </b:column>
+                </b:row>
+                     <h1 style="font-size: 28px; text-align: center; padding-bottom: 10px; border-radius: 4px; font-family: 'Roboto';">CRIAR ATIVIDADE</h1>
+                     
+                     <b:row>
+                        <b:column medium-screen="7">
+                            <b:selectOneMenu value="" required="true" label="Definir Responsável:">
+                                <f:selectItem itemLabel="resp at 1" itemValue="1" />
+                                <f:selectItem itemLabel="resp at 2" itemValue="2" />
+                                <f:selectItem itemLabel="resp at 3" itemValue="3" />
+                            </b:selectOneMenu>
+                         </b:column>
+                         
+                        <b:column medium-screen="5">
+                            <a href="cadastrarRespAtividade.sge"><b:commandButton value="Cadastrar Responsável" look="warning" style="width:245px; margin-top: 26px;" iconAwesome="fa-user-plus"/></a>
+                        </b:column>
+                     </b:row>
+                <b:row>
+                    <b:column medium-screen="12">
+                        <b:inputText placeholder="Tipo da atividade" label="Tipo:" />
+                    </b:column>
+                </b:row>
+                
+                <b:row>
+                    <b:column medium-screen="12">
+                        <b:inputText placeholder="Tema da atividade" label="Tema:" />
+                    </b:column>
+                </b:row>
+                    
+                <b:row>
+                    <b:column medium-screen="6">
+                        <b:dateTimePicker show-time="false" label="Data:" placeholder="Data da atividade" />
+                    </b:column>
+                    <b:column medium-screen="6">
+                        <b:dateTimePicker show-date="false" label="Hora:" iconAwesome="fa-clock-o" placeholder="Horario da atividade"/>
+                    </b:column>   
+                </b:row>
+                    
+                <b:row>
+                    <b:column medium-screen="12">
+                        <b:inputText placeholder="Local da atividade" label="Local:" />
+                    </b:column>
+                </b:row>
+                    
+                <b:row>
+                    <b:column medium-screen="6">
+                        <b:inputText placeholder="Vagas minimas" label=" Vagas minimas:" />
+                    </b:column>
+                    <b:column medium-screen="6">
+                        <b:inputText placeholder="Vagas maximas" label=" Vagas maximas:" />
+                    </b:column>
+                </b:row>
+                    
+                <b:row>
+                    <b:column>
+                        <b:inputTextarea placeholder="Escreva aqui..." label="Descrição:" value=""></b:inputTextarea>
+                    </b:column>
+                </b:row>
+                    
+                <b:row>    
+                    <b:column medium-screen="12">
+                        <b:buttonGroup offset="8">
+                            <b:button value="Cancelar" href="indexAtividade.sge" look="danger" style="width:116px" iconAwesome="fa-times"/>
+                            <b:button value="Adicionar" href="definirRespAtividade.sge" look="success" style="width:116px" iconAwesome="fa-mail-forward"/>
+                        </b:buttonGroup>
+                    </b:column>
+                </b:row>
+            </b:panel>
+            </b:container>
+        </h:form>
+    </h:body>
+</html>

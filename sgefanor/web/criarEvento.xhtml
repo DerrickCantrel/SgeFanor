@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>
+            Criar Evento
+        </title>
+
+    </h:head>
+    <h:body style="background-color: #003366">
+        <h:form style="padding-top: 75px;">
+           <b:container>
+            <b:panel look="none" medium-screen="8" offset="2" style="background-color: rgba(255, 255, 255, 1);">
+            <b:row>
+                <b:column medium-screen="12">
+                    <h1 style="font-size: 28px; text-align: center; padding-bottom: 10px; border-radius: 4px; font-family: 'Roboto';">CRIAR EVENTO</h1>
+                </b:column>
+            </b:row>
+                <b:row>
+                <b:column medium-screen="7">
+                    <b:selectOneMenu value="" required="true">
+                        <f:selectItem itemLabel="Selecione um Responsável" itemValue="" />
+                        <f:selectItem itemLabel="Responsável 01" itemValue="1" />
+                        <f:selectItem itemLabel="Responsável 02" itemValue="2" />
+                        <f:selectItem itemLabel="Responsável 03" itemValue="3" />
+                    </b:selectOneMenu>
+                </b:column>
+                    <b:column medium-screen="5">
+                            <a href="cadastrarRespAtividade.sge"><b:commandButton value="Cadastrar Responsável" look="warning" style="width:245px; margin-top: 1px;" iconAwesome="fa-user-plus"/></a>
+                    </b:column>
+            </b:row>
+            
+            <b:row>
+                <b:column medium-screen="12">
+                    <b:inputText placeholder="Nome do Evento" label="Nome:" />
+                </b:column>
+            </b:row>
+               
+            <b:row>
+                <b:column medium-screen="12">
+                    <b:inputText placeholder="ex: Faculdade de Tecnologia do Ceará" label="Local:"/>
+                </b:column>
+            </b:row>
+               
+            <b:row>
+                <b:column medium-screen="4">
+                    <b:dateTimePicker value="" show-time='false' label="Início:" iconAwesome="fa-calendar" />
+                </b:column>
+                
+                <b:column medium-screen="4">
+                    <b:dateTimePicker value="" show-time='false' label="Fim:" iconAwesome="fa-calendar" />
+                </b:column>
+                
+                <b:column medium-screen="4">
+                    <b:dateTimePicker value="" show-date='false' label="Hora:" iconAwesome="clock-o" />
+                </b:column>
+            </b:row>
+               
+            <b:row>
+                <b:column>
+                    <b:inputTextarea placeholder="Escreva aqui..." label="Descrição:" value=""></b:inputTextarea>
+                </b:column>
+            </b:row>
+               
+            <b:row>
+                <b:column medium-screen="12">
+                    <b:buttonGroup offset="8">
+                        <b:button value="Cancelar" href="indexAdministrador.sge" look="danger" style="width:116px" iconAwesome="fa-times"/>
+                        <b:button value="Adicionar" href="definirRespGeral.sge" look="success" style="width:116px" iconAwesome="fa-mail-forward"/>
+                    </b:buttonGroup>
+                </b:column>
+            </b:row>
+                   
+            </b:panel>      
+          </b:container>
+        </h:form>
+    </h:body>
+</html>

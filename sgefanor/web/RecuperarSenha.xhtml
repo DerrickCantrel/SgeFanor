@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>Esqueci minha Senha</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    <h:body style="background-color: #003366">
+        <h:form style="padding-top: 200px;">
+           <b:container>
+                <b:panel look="none" medium-screen="8" offset="2" style="background-color: rgba(255, 255, 255, 1);">
+                    <b:row>
+                        <b:column medium-screen="12">
+                         <h1 style="font-size: 28px; text-align: center; padding-bottom: 10px; border-radius: 4px; font-family: 'Roboto';">Recupere sua Senha</h1>
+                        </b:column>
+                    </b:row>
+            
+                    <b:row>
+                        <b:column medium-screen="12">
+                         <h4 style="font-size: 18px; text-align: center; padding-bottom: 10px;">Recupere o acesso ao sistema informando seu e-mail, para ser enviado sua nova senha.</h4>
+                        </b:column>
+                    </b:row>
+                
+                    <b:row>
+                        <b:column medium-screen="10" offset="1">
+                         <b:inputText placeholder="Seu e-mail">
+                            <f:facet name="prepend">
+                                <b:icon name="user" />
+                            </f:facet>
+                         </b:inputText>
+                        </b:column>
+                    </b:row>
+                    
+                    <b:row>
+                            <b:column span="2" offset="2">
+                            <b:button value="Voltar" href="AreaLogin.sge" look="danger" style="width:120%" />
+                        </b:column>
+                            <b:column span="4">
+                            <b:button value="Enviar Nova Senha" onclick="alert('Verifique seu e-mail'); return false;" look="info" style="width:140%" />
+                        </b:column>
+                    </b:row>
+            </b:panel>
+            </b:container>
+        </h:form>
+    </h:body>
+</html>

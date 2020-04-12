@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:b="http://bootsfaces.net/ui"
+      xmlns:h="http://xmlns.jcp.org/jsf/html">
+    <h:head>
+        <title>  Cadastra responsável pela atividade</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    </h:head>
+    
+    <h:body style="background-color: #f8f8ff">
+        <h:form>
+            <b:container>
+                <b:panel look="none" medium-screen="8" offset="2" style="background-color: rgba(0, 0, 0, 0.1); margin-top: 100px;">
+                    <b:row>
+                      <b:column medium-screen="12">
+                        <h1 style="font-size: 28px; text-align: center; padding-bottom: 10px; border-radius: 4px; font-family: 'Roboto';">CADASTRAR RESPONSÁVEL POR ATIVIDADE</h1>
+                    </b:column>     
+                    </b:row>
+                <b:row>
+                    <b:column medium-screen="12">
+                        <b:inputText placeholder="E-mail do responsável" label="E-mail:" />
+                    </b:column>
+                </b:row>
+                <b:row>
+                   <b:column offset="5">
+                       <b:button value="Voltar" href="indexAtividade.sge" look="info" style="width:122px" iconAwesome="fa-angle-double-left"/>
+                       <b:button value="Cadastrar Responsável Atividade" href="#" look="success" style="width:270px" iconAwesome="fa-user-plus"/>
+                   </b:column>
+                </b:row>
+                </b:panel>
+            </b:container>
+        </h:form>
+    </h:body>
+</html>
